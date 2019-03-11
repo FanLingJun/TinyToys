@@ -1,0 +1,16 @@
+//开始设置的时间间隔太短导致被封号很多次，另外要感谢我的同学为这段代码加上了时间控制函数
+
+if(navigator.onLine){
+    setInterval(() => {
+      $(":button").click();
+      setTimeout(() => {
+          $("[href='#']").click();
+      }, 4000)
+  }, 6000)
+}else{
+   window.close();
+}
+
+
+
+
